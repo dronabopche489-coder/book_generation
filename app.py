@@ -25,7 +25,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Initialize Gemini client
-client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+client = genai.GenerativeModel(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Dictionary to store generated PDFs (in production, use a database or file storage)
 generated_books = {}
