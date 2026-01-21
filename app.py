@@ -1,9 +1,10 @@
 import os
 import json
 import uuid
+import google.generativeai as genai
+
 from flask import Flask, request, jsonify, send_file
 from flask_cors import CORS
-from google import genai
 from dotenv import load_dotenv
 import tempfile
 from datetime import datetime
